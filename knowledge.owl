@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/C6Kf6SyiWyzziVy8JSEaqO#"
+     xml:base="http://webprotege.stanford.edu/project/C6Kf6SyiWyzziVy8JSEaqO"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:microservice="http://swt.cloud.informatik.uni-jena.de/microservice/170"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:microservice2="http://swt.cloud.informatik.uni-jena.de/microservice#"
+     xmlns:microservice1="http://swt.cloud.informatik.uni-jena.de/microservice/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:microservice3="http://swt.cloud.informatik.uni-jena.de/microservice/9">
+    <owl:Ontology rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice">
+        <terms:license xml:lang="en">MIT</terms:license>
+        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+        <dc:description xml:lang="en">Metamodel to describe common microservices, as well as continious integration, delivery and deployment related steps to compile, package, bake and deploy.</dc:description>
+        <dc:title xml:lang="en">Microservice Supply Chain Metamodel</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/P7D9EnnTz11G2CHZSWV0ihO -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/P7D9EnnTz11G2CHZSWV0ihO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/91ac583d0a5d472a8a61569"/>
+        <rdfs:label>describeBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/R7SzvdeRD4Gf94wFHBxtpGR -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7SzvdeRD4Gf94wFHBxtpGR">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK"/>
+        <rdfs:label>consume</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RBXEPtoeqGuO8uWHEeRODz -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RBXEPtoeqGuO8uWHEeRODz">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK"/>
+        <rdfs:label>provide</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RDXFii9fvprILg0bp1NWfr6 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RDXFii9fvprILg0bp1NWfr6">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label>use</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RNBVDbEvj0fyLeAYZMX1gJ -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RNBVDbEvj0fyLeAYZMX1gJ">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:label>create</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/b4f9d30e_c4ae_4d7c_994f_ec8664e61da2 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/b4f9d30e_c4ae_4d7c_994f_ec8664e61da2">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7lpAbe8qgdzaAvxTIBqyiS"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/8c578b7c_8fc6_424d_8808_a3101358f94f"/>
+        <rdfs:label xml:lang="en">hasVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/bd5050a8_6996_4425_8ccb_172f4196256b -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/bd5050a8_6996_4425_8ccb_172f4196256b">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDXFii9fvprILg0bp1NWfr6"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g"/>
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7lpAbe8qgdzaAvxTIBqyiS"/>
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g"/>
+        <rdfs:label xml:lang="en">useArtifact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/c537d203_b203_4465_a780_5768cc511809 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/c537d203_b203_4465_a780_5768cc511809">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R8voYKm2JEUEBO9QPBkq3A6"/>
+        <rdfs:label xml:lang="en">hasEndpoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/dee52b87_b9bf_4c5b_909b_046e25552cf4 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/dee52b87_b9bf_4c5b_909b_046e25552cf4">
+        <rdfs:label xml:lang="en">link</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/f6cf258b_b7b7_436e_8fe2_cc9cdd158202 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/f6cf258b_b7b7_436e_8fe2_cc9cdd158202">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fb878991_0877_4ebc_bb58_a540f956f8ef"/>
+        <rdfs:label xml:lang="en">hasAttribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/fd08cfe0_09e5_4b6c_9d4a_11420d54fb32 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/fd08cfe0_09e5_4b6c_9d4a_11420d54fb32">
+        <rdfs:label xml:lang="en">related</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/1fd34ea5_fa99_4d9c_8765_ff9d10497188 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/1fd34ea5_fa99_4d9c_8765_ff9d10497188">
+        <owl:inverseOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/844d1a98_0281_4512_84c8_33b67ef33c1b"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2"/>
+        <rdfs:label>depend</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/3bc40e1d_9355_4941_9cb4_a9518f9f6f0a -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/3bc40e1d_9355_4941_9cb4_a9518f9f6f0a">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/dee52b87_b9bf_4c5b_909b_046e25552cf4"/>
+        <owl:inverseOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/9638b53f_c827_4634_9930_82c3c6f14d86"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/4d9c5339_f1cf_4c5b_9aae_5e7f867ded19"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO"/>
+        <rdfs:label xml:lang="en">linkProducer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/3c4e2ff1_9326_43a0_8786_53adfee4044f -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/3c4e2ff1_9326_43a0_8786_53adfee4044f">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7lpAbe8qgdzaAvxTIBqyiS"/>
+        <rdfs:label xml:lang="en">hasDeployment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/4d9a7c13_6b7f_4c21_a086_8e6c39c778b3 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/4d9a7c13_6b7f_4c21_a086_8e6c39c778b3">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7sdA9oYldnkCRx9HjEVZxt"/>
+        <rdfs:label xml:lang="en">hasDomainModel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/40a4ac50_ff74_4adb_ba6b_c5f110bb683d -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/40a4ac50_ff74_4adb_ba6b_c5f110bb683d">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RCHS1AtYrRtkqSRQPSlEOCa"/>
+        <rdfs:label xml:lang="en">hasAssembly</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/46e9e965_40f5_49f7_8ca3_7d2d181c3e5f -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/46e9e965_40f5_49f7_8ca3_7d2d181c3e5f">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDXFii9fvprILg0bp1NWfr6"/>
+        <rdfs:label xml:lang="en">useBuilder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/4824c6f4_9223_430f_8aeb_0eab465db8c1 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/4824c6f4_9223_430f_8aeb_0eab465db8c1">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7lpAbe8qgdzaAvxTIBqyiS"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/17617f87_036b_4f9e_8a8e_07b7d27270d7"/>
+        <rdfs:label xml:lang="en">hasBinding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/5bef0439_86b7_4cf5_bd46_b81d97d6542d -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/5bef0439_86b7_4cf5_bd46_b81d97d6542d">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/dee52b87_b9bf_4c5b_909b_046e25552cf4"/>
+        <owl:inverseOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/8f9510d4_e3c7_4bbc_8422_ce005ef29fcb"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/a98786e8_edfd_446b_a5af_2f1b302ff501"/>
+        <rdfs:label xml:lang="en">linkedByConsumption</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/58c32cee_dc07_4f76_8922_acc636cb367b -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/58c32cee_dc07_4f76_8922_acc636cb367b">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDJHXm8i1mxWoox6VLRbmP"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+        <rdfs:label xml:lang="en">hasBase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/632d9f0a_9af7_433e_ad33_c78e96d3791e -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/632d9f0a_9af7_433e_ad33_c78e96d3791e">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/8c578b7c_8fc6_424d_8808_a3101358f94f"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fb878991_0877_4ebc_bb58_a540f956f8ef"/>
+        <rdfs:label xml:lang="en">setAttribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/8f9510d4_e3c7_4bbc_8422_ce005ef29fcb -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/8f9510d4_e3c7_4bbc_8422_ce005ef29fcb">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/dee52b87_b9bf_4c5b_909b_046e25552cf4"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/a98786e8_edfd_446b_a5af_2f1b302ff501"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT"/>
+        <rdfs:label xml:lang="en">linkConsumer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/844d1a98_0281_4512_84c8_33b67ef33c1b -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/844d1a98_0281_4512_84c8_33b67ef33c1b">
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2"/>
+        <rdfs:label>referencedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/9f87142a700f499bb0012fa -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/9f87142a700f499bb0012fa">
+        <rdfs:label>contain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/91ac583d0a5d472a8a61569 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/91ac583d0a5d472a8a61569">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>describe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/9638b53f_c827_4634_9930_82c3c6f14d86 -->
+
+    <owl:ObjectProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/9638b53f_c827_4634_9930_82c3c6f14d86">
+        <rdfs:subPropertyOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/dee52b87_b9bf_4c5b_909b_046e25552cf4"/>
+        <rdfs:domain rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO"/>
+        <rdfs:range rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/4d9c5339_f1cf_4c5b_9aae_5e7f867ded19"/>
+        <rdfs:label xml:lang="en">linkedByPublication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_03bc7c78_c701_4391_b2b7_47bd7b781c91 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_03bc7c78_c701_4391_b2b7_47bd7b781c91">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">fragment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_05695760_365f_4239_9e00_f6cc4b0fdd3f -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_05695760_365f_4239_9e00_f6cc4b0fdd3f">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_2f6409ed_7821_4102_8504_c288bc3d3229 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_2f6409ed_7821_4102_8504_c288bc3d3229">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">domain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_43cc39c0_b538_49fb_ad61_dbff150ac058 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_43cc39c0_b538_49fb_ad61_dbff150ac058">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">port</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_73bb1262_5fd5_488b_b443_5a81c7d86d9f -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_73bb1262_5fd5_488b_b443_5a81c7d86d9f">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">query</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_79fd64d0_712b_473f_8b90_1e27c5777e96 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_79fd64d0_712b_473f_8b90_1e27c5777e96">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">password</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c422a9df_5d5a_47b1_aa4b_e9dde4d83f62 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c422a9df_5d5a_47b1_aa4b_e9dde4d83f62">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">scheme</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">path</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c667a66c_b006_4b78_aa43_e737499eb9e5 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c667a66c_b006_4b78_aa43_e737499eb9e5">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">user</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/a745cf41_b2ea_47aa_ba86_12ae3eeea502 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/a745cf41_b2ea_47aa_ba86_12ae3eeea502">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/170cbbea_d35f_4e25_870f_ca372e986474 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/170cbbea_d35f_4e25_870f_ca372e986474">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">method</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/748cee5d_c4eb_4d38_b7d6_12de92453919 -->
+
+    <owl:DatatypeProperty rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/748cee5d_c4eb_4d38_b7d6_12de92453919">
+        <rdfs:label xml:lang="en">content</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/bd5050a8_6996_4425_8ccb_172f4196256b"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/58c32cee_dc07_4f76_8922_acc636cb367b"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_05695760_365f_4239_9e00_f6cc4b0fdd3f"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Artifacts has to be named by URIs. E. g., http://central.maven.org/maven2/org/apache/camel/camel-core/2.22.1/camel-core-2.22.1.jar points on a jar package, managed by maven - where central.maven.org is used as the maven repository, maven2 as the repository version, org.apache.camel as the group id, camel-core as the artifact id and 2.22.1 as the version number. As another example, https://www.npmjs.com/package/properties-to-object/v/1.0.2 points on a npm package, managed by npm - where centeral www.npmjs.com is the central repository, properties-to-object the package name and 1.0.2 the version number.</rdfs:comment>
+        <rdfs:label xml:lang="en">Artifact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/R7lpAbe8qgdzaAvxTIBqyiS -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7lpAbe8qgdzaAvxTIBqyiS">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2"/>
+        <owl:disjointWith rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RCHS1AtYrRtkqSRQPSlEOCa"/>
+        <rdfs:label xml:lang="en">Deployment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/P7D9EnnTz11G2CHZSWV0ihO"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/R7sdA9oYldnkCRx9HjEVZxt -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7sdA9oYldnkCRx9HjEVZxt">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/9f87142a700f499bb0012fa"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">DomainModel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/R8voYKm2JEUEBO9QPBkq3A6 -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R8voYKm2JEUEBO9QPBkq3A6">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO"/>
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:label xml:lang="en">Endpoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R8voYKm2JEUEBO9QPBkq3A6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RBXEPtoeqGuO8uWHEeRODz"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/58c32cee_dc07_4f76_8922_acc636cb367b"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT"/>
+        <rdfs:label xml:lang="en">Producer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_03bc7c78_c701_4391_b2b7_47bd7b781c91"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_73bb1262_5fd5_488b_b443_5a81c7d86d9f"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/170cbbea_d35f_4e25_870f_ca372e986474"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RCHS1AtYrRtkqSRQPSlEOCa -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RCHS1AtYrRtkqSRQPSlEOCa">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RNBVDbEvj0fyLeAYZMX1gJ"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/46e9e965_40f5_49f7_8ca3_7d2d181c3e5f"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RDHP5B4sT8Q6vsLAJXBEbDH"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/91ac583d0a5d472a8a61569"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/58c32cee_dc07_4f76_8922_acc636cb367b"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Entrypoint to describe a new service. Services contain one or more components, have dependencies to artifacts, are named by an URI and use some assemblies to create there own artifacts and have deployments.</rdfs:comment>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RDHP5B4sT8Q6vsLAJXBEbDH -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RDHP5B4sT8Q6vsLAJXBEbDH">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g"/>
+        <rdfs:label xml:lang="en">Builder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R8voYKm2JEUEBO9QPBkq3A6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7SzvdeRD4Gf94wFHBxtpGR"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/58c32cee_dc07_4f76_8922_acc636cb367b"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Consumer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/a98786e8_edfd_446b_a5af_2f1b302ff501 -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/a98786e8_edfd_446b_a5af_2f1b302ff501">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/17617f87_036b_4f9e_8a8e_07b7d27270d7"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/8f9510d4_e3c7_4bbc_8422_ce005ef29fcb"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RecsntBcuZ17YIW6dYBUIT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/4d9c5339_f1cf_4c5b_9aae_5e7f867ded19"/>
+        <rdfs:label xml:lang="en">Consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2 -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7lpAbe8qgdzaAvxTIBqyiS"/>
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RCHS1AtYrRtkqSRQPSlEOCa"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/1fd34ea5_fa99_4d9c_8765_ff9d10497188"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/cafca37ddc7e475ca7c0bb2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">LifecycleElement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58 -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_03bc7c78_c701_4391_b2b7_47bd7b781c91"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_2f6409ed_7821_4102_8504_c288bc3d3229"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_43cc39c0_b538_49fb_ad61_dbff150ac058"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_73bb1262_5fd5_488b_b443_5a81c7d86d9f"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_79fd64d0_712b_473f_8b90_1e27c5777e96"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c422a9df_5d5a_47b1_aa4b_e9dde4d83f62"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c667a66c_b006_4b78_aa43_e737499eb9e5"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Uri</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/fb878991_0877_4ebc_bb58_a540f956f8ef -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/fb878991_0877_4ebc_bb58_a540f956f8ef">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/a745cf41_b2ea_47aa_ba86_12ae3eeea502"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e">
+        <rdfs:label xml:lang="en">Metamodel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/1d3ab8bf5f1e463e9e56f85 -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/1d3ab8bf5f1e463e9e56f85">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_2f6409ed_7821_4102_8504_c288bc3d3229"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c422a9df_5d5a_47b1_aa4b_e9dde4d83f62"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice#OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Url</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/17617f87_036b_4f9e_8a8e_07b7d27270d7 -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/17617f87_036b_4f9e_8a8e_07b7d27270d7">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/a98786e8_edfd_446b_a5af_2f1b302ff501"/>
+                    <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/4d9c5339_f1cf_4c5b_9aae_5e7f867ded19"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/58c32cee_dc07_4f76_8922_acc636cb367b"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Used by deployments to describe bindings between deployed consumptions and implemented consumers endpoints as well as deployed publishments and implemented producer endpoints.</rdfs:comment>
+        <rdfs:label xml:lang="en">Binding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/4d9c5339_f1cf_4c5b_9aae_5e7f867ded19 -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/4d9c5339_f1cf_4c5b_9aae_5e7f867ded19">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/17617f87_036b_4f9e_8a8e_07b7d27270d7"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/3bc40e1d_9355_4941_9cb4_a9518f9f6f0a"/>
+                <owl:someValuesFrom rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/8c578b7c_8fc6_424d_8808_a3101358f94f -->
+
+    <owl:Class rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/8c578b7c_8fc6_424d_8808_a3101358f94f">
+        <rdfs:subClassOf rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fc3eb223_6d58_4aa9_adff_86430b70714e"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/632d9f0a_9af7_433e_ad33_c78e96d3791e"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/fb878991_0877_4ebc_bb58_a540f956f8ef"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/748cee5d_c4eb_4d38_b7d6_12de92453919"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/a1a1db12_99fc_466d_bc47_688ac9880609 -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/a1a1db12_99fc_466d_bc47_688ac9880609">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD"/>
+        <microservice1:RDJHXm8i1mxWoox6VLRbmP rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/def9cce2_364b_49a8_9c2a_04f80cfe442b"/>
+        <microservice1:RDJHXm8i1mxWoox6VLRbmP rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/e3b6b6ef_e415_46e3_8ac9_6bb63828a58c"/>
+        <rdfs:label xml:lang="en">SimpleRestService</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/c2f76c14_a693_401f_b3cb_78721d92fbb0 -->
+
+    <owl:Thing rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/c2f76c14_a693_401f_b3cb_78721d92fbb0">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label xml:lang="en">HelloWorldResponse</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/d2e28bbc_b5c8_4fb3_bae1_16a828e65f52 -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/d2e28bbc_b5c8_4fb3_bae1_16a828e65f52">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+        <rdfs:label xml:lang="en">HelloWorldUri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/def9cce2_364b_49a8_9c2a_04f80cfe442b -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/def9cce2_364b_49a8_9c2a_04f80cfe442b">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm"/>
+        <microservice1:RDJHXm8i1mxWoox6VLRbmP rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/06277467_ed09_4a27_82f6_eaa54f6d485b"/>
+        <microservice1:RDJHXm8i1mxWoox6VLRbmP rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/21e34254_c712_4ca7_9fa4_914555c882b6"/>
+        <rdfs:label xml:lang="en">SimpleRestServiceMain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/e3b6b6ef_e415_46e3_8ac9_6bb63828a58c -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/e3b6b6ef_e415_46e3_8ac9_6bb63828a58c">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+        <microservice2:OWLDataPropertyImpl_2f6409ed_7821_4102_8504_c288bc3d3229>swt.informatik.uni-jena.de</microservice2:OWLDataPropertyImpl_2f6409ed_7821_4102_8504_c288bc3d3229>
+        <microservice2:OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a>/simplerestservice</microservice2:OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a>
+        <rdfs:label xml:lang="en">SimpleRestServiceUri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/05a1aaba_f18b_4ae9_927a_faed528f9a78 -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/05a1aaba_f18b_4ae9_927a_faed528f9a78">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7sdA9oYldnkCRx9HjEVZxt"/>
+        <microservice3:f87142a700f499bb0012fa rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/c2f76c14_a693_401f_b3cb_78721d92fbb0"/>
+        <rdfs:label xml:lang="en">HelloWorldDomainModel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/06277467_ed09_4a27_82f6_eaa54f6d485b -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/06277467_ed09_4a27_82f6_eaa54f6d485b">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC97r4FpiGjIvVOuBJs1GMO"/>
+        <microservice1:RBXEPtoeqGuO8uWHEeRODz rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/17174246_d141_4ec8_9c73_204ee1b39bfd"/>
+        <microservice1:RDJHXm8i1mxWoox6VLRbmP rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/5a561aff_4a72_40ca_94c9_837d17276552"/>
+        <rdfs:label xml:lang="en">SimpleRestServiceProducer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/17174246_d141_4ec8_9c73_204ee1b39bfd -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/17174246_d141_4ec8_9c73_204ee1b39bfd">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK"/>
+        <microservice1:RDJHXm8i1mxWoox6VLRbmP rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/d2e28bbc_b5c8_4fb3_bae1_16a828e65f52"/>
+        <microservice1:RDJHXm8i1mxWoox6VLRbmP rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/05a1aaba_f18b_4ae9_927a_faed528f9a78"/>
+        <microservice:cbbea_d35f_4e25_870f_ca372e986474>GET</microservice:cbbea_d35f_4e25_870f_ca372e986474>
+        <rdfs:label xml:lang="en">HelloWorld</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/21e34254_c712_4ca7_9fa4_914555c882b6 -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/21e34254_c712_4ca7_9fa4_914555c882b6">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/R7sdA9oYldnkCRx9HjEVZxt"/>
+        <rdfs:label xml:lang="en">SimpleRestServiceDomainModel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://swt.cloud.informatik.uni-jena.de/microservice/5a561aff_4a72_40ca_94c9_837d17276552 -->
+
+    <owl:NamedIndividual rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/5a561aff_4a72_40ca_94c9_837d17276552">
+        <rdf:type rdf:resource="http://swt.cloud.informatik.uni-jena.de/microservice/f4721db5fd2f4537a33aa58"/>
+        <microservice2:OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a>/hello</microservice2:OWLDataPropertyImpl_c4300a1d_c291_4583_971b_83f140a7804a>
+        <rdfs:label xml:lang="en">SimpleRestServiceProducerBaseUri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7fskqsmPseXXx9jgd6475g"/>
+            <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7r8M1mcppY1Vua4SWIWQtm"/>
+            <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/R7sdA9oYldnkCRx9HjEVZxt"/>
+            <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RC9jOPLRRFHicxRtwrB5XtK"/>
+            <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/RD3AqTRz78ydhABJJ8UwJaD"/>
+            <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/fb878991_0877_4ebc_bb58_a540f956f8ef"/>
+            <rdf:Description rdf:about="http://swt.cloud.informatik.uni-jena.de/microservice/8c578b7c_8fc6_424d_8808_a3101358f94f"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
